@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="keywords" content="html,css,js" />
+    <meta
+      name="description"
+      content="Product preview card component by oussama ayadi"
+    />
+    <meta name="author" content="oussama ayadi" />
+    <meta name="publisher" content="oussama ayadi" />
+    <meta name="copyright" content="oussama ayadi" />
+    <meta property="og:image" content="./design/desktop-design.jpg" />
+    <meta property="og:title" content="Product preview card component" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="Product preview card component " />
+    <meta
+      name="twitter:description"
+      content=" Product preview card component by oussama ayadi"
+    />
+    <meta name="twitter:image" content="./design/desktop-design.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main
+      class="mx-auto w-3/6 flex flex-col bg-white mt-20 md:flex-row rounded-md overflow-hidden"
+    >
+      <div class="image w-full md:w-3/6">
+        <img
+          class="hidden md:block"
+          src="./images/image-product-desktop.jpg"
+          alt=""
+        />
+        <img
+          class="block md:hidden"
+          src="./images/image-product-mobile.jpg"
+          alt=""
+        />
+      </div>
+      <div
+        class="content w-full md:w-3/6 p-10 flex flex-col justify-between gap-3"
+      >
+        <h1 class="uppercase tracking-widest text-sm title">Preview</h1>
+
+        <h2 class="text-4xl sub-title">Gabrielle Essence Eau De Parfum</h2>
+        <p class="text-sm">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <div class="price flex items-center gap-3">
+          <span class="text-3xl big-price">$149.99</span>
+          <span class="text-sm line-through">$169.99 </span>
+        </div>
+
+        <button
+          class="rounded p-3 text-white add-btn flex items-center justify-center gap-3"
+        >
+          <img src="./images/icon-cart.svg" alt="" />
+          <span>Add to Cart</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="attribution text-center mt-12">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/oussama-ayadi1/" class="text-red-800"
+        >oussama ayadi</a
+      >.
+    </footer>
+  </body>
+</html>
